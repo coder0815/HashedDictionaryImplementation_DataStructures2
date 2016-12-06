@@ -1,0 +1,42 @@
+﻿  Main.cpp
+l:\school\data structures ii\dictionary_assignment\dictionary_assignment\hasheddictionary.cpp(134): warning C4018: '<': signed/unsigned mismatch
+  l:\school\data structures ii\dictionary_assignment\dictionary_assignment\hasheddictionary.cpp(132): note: while compiling class template member function 'int HashedDictionary<std::string,int>::GetHashIndex(KeyType)'
+          with
+          [
+              KeyType=std::string
+          ]
+  l:\school\data structures ii\dictionary_assignment\dictionary_assignment\main.cpp(151): note: see reference to function template instantiation 'int HashedDictionary<std::string,int>::GetHashIndex(KeyType)' being compiled
+          with
+          [
+              KeyType=std::string
+          ]
+  l:\school\data structures ii\dictionary_assignment\dictionary_assignment\main.cpp(127): note: see reference to class template instantiation 'HashedDictionary<std::string,int>' being compiled
+l:\school\data structures ii\dictionary_assignment\dictionary_assignment\hasheddictionary.cpp(272): warning C4018: '<': signed/unsigned mismatch
+l:\school\data structures ii\dictionary_assignment\dictionary_assignment\hasheddictionary.cpp(27): warning C4018: '<': signed/unsigned mismatch
+  l:\school\data structures ii\dictionary_assignment\dictionary_assignment\hasheddictionary.cpp(26): note: while compiling class template member function 'void HashedDictionary<std::string,int>::SetPowerOfTwo(std::vector<std::vector<int,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>)'
+          with
+          [
+              _Ty=int
+          ]
+  l:\school\data structures ii\dictionary_assignment\dictionary_assignment\hasheddictionary.cpp(277): note: see reference to function template instantiation 'void HashedDictionary<std::string,int>::SetPowerOfTwo(std::vector<std::vector<int,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>)' being compiled
+          with
+          [
+              _Ty=int
+          ]
+  l:\school\data structures ii\dictionary_assignment\dictionary_assignment\hasheddictionary.cpp(72): note: while compiling class template member function 'HashedDictionary<std::string,int>::HashedDictionary(void)'
+  l:\school\data structures ii\dictionary_assignment\dictionary_assignment\main.cpp(127): note: see reference to function template instantiation 'HashedDictionary<std::string,int>::HashedDictionary(void)' being compiled
+l:\school\data structures ii\dictionary_assignment\dictionary_assignment\hasheddictionary.cpp(29): warning C4018: '>': signed/unsigned mismatch
+l:\school\data structures ii\dictionary_assignment\dictionary_assignment\hasheddictionary.cpp(51): warning C4018: '<': signed/unsigned mismatch
+  l:\school\data structures ii\dictionary_assignment\dictionary_assignment\hasheddictionary.cpp(48): note: while compiling class template member function 'int HashedDictionary<std::string,int>::EvaluateHornersRule(int,std::vector<int,std::allocator<_Ty>>)'
+          with
+          [
+              _Ty=int
+          ]
+  l:\school\data structures ii\dictionary_assignment\dictionary_assignment\hasheddictionary.cpp(281): note: see reference to function template instantiation 'int HashedDictionary<std::string,int>::EvaluateHornersRule(int,std::vector<int,std::allocator<_Ty>>)' being compiled
+          with
+          [
+              _Ty=int
+          ]
+l:\school\data structures ii\dictionary_assignment\dictionary_assignment\hasheddictionary.cpp(128): warning C4715: 'HashedDictionary<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,int>::GetEntry': not all control paths return a value
+  Dictionary_Assignment.vcxproj -> L:\School\Data Structures II\Dictionary_Assignment\Debug\Dictionary_Assignment.exe
+  Dictionary_Assignment.vcxproj -> L:\School\Data Structures II\Dictionary_Assignment\Debug\Dictionary_Assignment.pdb (Full PDB)
