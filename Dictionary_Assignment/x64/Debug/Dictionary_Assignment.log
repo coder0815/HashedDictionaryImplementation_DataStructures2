@@ -1,29 +1,18 @@
 ﻿  Main.cpp
-f:\school\data structures ii\dictionary_assignment\hasheddictionaryimplementation_datastructures2\dictionary_assignment\hasheddictionary.cpp(31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  f:\school\data structures ii\dictionary_assignment\hasheddictionaryimplementation_datastructures2\dictionary_assignment\hasheddictionary.cpp(26): note: while compiling class template member function 'void HashedDictionary<std::string,int>::SetPowerOfTwo(std::vector<std::vector<int,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>)'
+f:\school\data structures ii\dictionary_assignment\hasheddictionaryimplementation_datastructures2\dictionary_assignment\hasheddictionary.cpp(44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  f:\school\data structures ii\dictionary_assignment\hasheddictionaryimplementation_datastructures2\dictionary_assignment\hasheddictionary.cpp(43): note: while compiling class template member function 'int HashedDictionary<std::string,int>::EvaluateHornersRule(int,std::vector<int,std::allocator<_Ty>>)'
           with
           [
               _Ty=int
           ]
-  f:\school\data structures ii\dictionary_assignment\hasheddictionaryimplementation_datastructures2\dictionary_assignment\hasheddictionary.cpp(152): note: see reference to function template instantiation 'void HashedDictionary<std::string,int>::SetPowerOfTwo(std::vector<std::vector<int,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>)' being compiled
+  f:\school\data structures ii\dictionary_assignment\hasheddictionaryimplementation_datastructures2\dictionary_assignment\hasheddictionary.cpp(158): note: see reference to function template instantiation 'int HashedDictionary<std::string,int>::EvaluateHornersRule(int,std::vector<int,std::allocator<_Ty>>)' being compiled
           with
           [
               _Ty=int
           ]
-  f:\school\data structures ii\dictionary_assignment\hasheddictionaryimplementation_datastructures2\dictionary_assignment\hasheddictionary.cpp(83): note: while compiling class template member function 'HashedDictionary<std::string,int>::HashedDictionary(void)'
+  f:\school\data structures ii\dictionary_assignment\hasheddictionaryimplementation_datastructures2\dictionary_assignment\hasheddictionary.cpp(78): note: while compiling class template member function 'HashedDictionary<std::string,int>::HashedDictionary(void)'
   f:\school\data structures ii\dictionary_assignment\hasheddictionaryimplementation_datastructures2\dictionary_assignment\main.cpp(127): note: see reference to function template instantiation 'HashedDictionary<std::string,int>::HashedDictionary(void)' being compiled
   f:\school\data structures ii\dictionary_assignment\hasheddictionaryimplementation_datastructures2\dictionary_assignment\main.cpp(127): note: see reference to class template instantiation 'HashedDictionary<std::string,int>' being compiled
-f:\school\data structures ii\dictionary_assignment\hasheddictionaryimplementation_datastructures2\dictionary_assignment\hasheddictionary.cpp(49): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  f:\school\data structures ii\dictionary_assignment\hasheddictionaryimplementation_datastructures2\dictionary_assignment\hasheddictionary.cpp(48): note: while compiling class template member function 'int HashedDictionary<std::string,int>::EvaluateHornersRule(int,std::vector<int,std::allocator<_Ty>>)'
-          with
-          [
-              _Ty=int
-          ]
-  f:\school\data structures ii\dictionary_assignment\hasheddictionaryimplementation_datastructures2\dictionary_assignment\hasheddictionary.cpp(156): note: see reference to function template instantiation 'int HashedDictionary<std::string,int>::EvaluateHornersRule(int,std::vector<int,std::allocator<_Ty>>)' being compiled
-          with
-          [
-              _Ty=int
-          ]
-f:\school\data structures ii\dictionary_assignment\hasheddictionaryimplementation_datastructures2\dictionary_assignment\hasheddictionary.cpp(140): warning C4715: 'HashedDictionary<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,int>::GetEntry': not all control paths return a value
+f:\school\data structures ii\dictionary_assignment\hasheddictionaryimplementation_datastructures2\dictionary_assignment\hasheddictionary.cpp(135): warning C4715: 'HashedDictionary<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,int>::GetEntry': not all control paths return a value
   Dictionary_Assignment.vcxproj -> F:\School\Data Structures II\Dictionary_Assignment\HashedDictionaryImplementation_DataStructures2\x64\Debug\Dictionary_Assignment.exe
   Dictionary_Assignment.vcxproj -> F:\School\Data Structures II\Dictionary_Assignment\HashedDictionaryImplementation_DataStructures2\x64\Debug\Dictionary_Assignment.pdb (Full PDB)

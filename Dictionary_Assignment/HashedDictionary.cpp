@@ -1,46 +1,41 @@
 #include "HashedDictionary.h"
 
 
-
-
 template<class KeyType, class ItemType>
-void HashedDictionary<KeyType, ItemType>::ConvertToBinary(int num)
+int HashedDictionary<KeyType, ItemType>::GetPowerOfTwo(int number)
 {
-	if (num > 0)
-	{
-		int result = num % 2;
-		num = num / 2;
-		binaryNumbers.push_back(result);
-		ConvertToBinary(num);
-	}
-	else
-	{
-		binary.push_back(binaryNumbers);
-	}
-	
+	int power = 0;  // power of two
+	int value = number; // number to get power of two from
 
+	while (value > 1)
+	{
+		value /= 2;
+		power++; // increaase the power of two
+	}
+	return power + 1;
 }
 
 template<class KeyType, class ItemType>
-void HashedDictionary<KeyType, ItemType>::SetPowerOfTwo(vector<vector<int>> list)
+void HashedDictionary<KeyType, ItemType>::SetPowerOfTwo(int number)
 {
-	for (int i = 0; i < list.size(); i++)
-	{
-		if (list[i].size() > powerOfTwo)
-		{
-			powerOfTwo = list[i].size();
-		}
-	}
+	powerOfTwo = number;
 }
 
 template<class KeyType, class ItemType>
 void HashedDictionary<KeyType, ItemType>::RaiseToPower(int num, int power)
 {
+	int number = num;
 	for (int i = 0; i < power; i++)
 	{
-		num *= num;
+		number *= number;
 	}
-	evaluatedPowerOfTwo = num;
+	SetEvaluatedPowerOfTwo(number);
+}
+
+template<class KeyType, class ItemType>
+void HashedDictionary<KeyType, ItemType>::SetEvaluatedPowerOfTwo(int number)
+{
+	evaluatedPowerOfTwo = number;
 }
 
 template<class KeyType, class ItemType>
@@ -142,14 +137,21 @@ ItemType HashedDictionary<KeyType, ItemType>::GetEntry(const KeyType key)
 template<class KeyType, class ItemType>
 int HashedDictionary<KeyType, ItemType>::GetHashIndex(KeyType key)
 {
+	int power = 0; // power of two
+	int tempPower; // temp power of two
 	GetASCIIValues(key);
 
 	for (int j = 0; j < keyValues.size(); j++)
-	{
-		ConvertToBinary(keyValues[j]);
-		binaryNumbers.clear();
+	{		
+		tempPower = GetPowerOfTwo(keyValues[j]);
+		if (tempPower > power)
+		{
+			// if we have a higher power of two, set power to that number
+			power = tempPower;
+		}
 	}		
-	SetPowerOfTwo(binary); // determine what power we will raise 2 to. 
+	
+	SetPowerOfTwo(power); // determine what power we will raise 2 to. 
 	RaiseToPower(2, powerOfTwo); // Raise 2, to the 'powerOfTwo'
 
 	// evaluate h(x) + x mod tableSize
@@ -157,8 +159,7 @@ int HashedDictionary<KeyType, ItemType>::GetHashIndex(KeyType key)
 	
 	int index = (evaluatedValue % hashTableSize);
 	keyValues.clear(); // clear keyvalues;
-	binary.clear(); // clear binary;
-	binaryNumbers.clear(); // clear binarynumbers;
+	
 
 	
 	return index;
