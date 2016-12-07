@@ -24,6 +24,7 @@ private:
 	void SetPowerOfTwo(vector<vector<int>> list);
 	void RaiseToPower(int num, int power);
 	int EvaluateHornersRule(int evalPower, vector<int> key);
+	void GetASCIIValues(KeyType key);
 
 
 public:
